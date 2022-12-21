@@ -20,8 +20,9 @@ public class MarkingController {
         else if (percentage < 88) {
             return 2;
         }
-        else {
+        else if (percentage <= 100) {
             return 1;
         }
+        return -1; // wrong input
     }
 }
